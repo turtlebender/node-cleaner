@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Perform necessary node-cleaner removal steps
+# after package is uninstalled.
+#
+
+echo "node-cleaner has been uninstalled!"
+
+exit 0
