@@ -52,7 +52,12 @@ def clean(chef_server, chef_user, chef_key, debug=False):
                     client = chef.Client(node.name)
                     client.delete()
 
-if __name__ == '__main__':
+
+def main():
     arguments = docopt(__doc__, version='Node Cleaner 1.0')
     clean(arguments['<server>'], arguments['<user>'], arguments['<key-file>'],
           arguments['--debug'])
+
+
+if __name__ == '__main__':
+    main()
